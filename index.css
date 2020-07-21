@@ -1,0 +1,188 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Muli', sans-serif;
+	color: white;
+}
+
+.mobile-only{
+	display: none;
+}
+
+.desktop-only{
+	display: block;
+}
+
+#empty{
+	height: 13vh;
+}
+
+a{
+	text-decoration: none;
+}
+
+#jumbotron{
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(rgb(25, 55, 100),rgba(25, 55, 100)), url("asset/5.jpg");
+	background-size: cover;
+	background-blend-mode: hard-light;
+	background-position: bottom;
+	display: flex;
+    justify-content: center;
+  	align-items: center;
+}
+
+#border-in{
+	width: calc(100% - 50px);
+	background-color: transparent;
+	height: calc(100vh - 50px);
+	border:solid;
+	border-color: white;
+	border-width: 6px;
+	display: flex;
+    justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
+}
+
+#logo{
+	/*max-width: 450px;*/
+	max-width: 33vw;
+}
+
+#explain{
+	/*font-size: 25px;*/
+	font-size: 2vw;
+	text-align: center;
+	letter-spacing: 1px;
+	font-weight: 300;
+	margin-top:0px;
+}
+
+.bold{
+	font-weight: 800;
+}
+
+#location{
+	/*font-size: 16px;*/
+	font-size: 1.5vw;
+	text-align: center;
+	letter-spacing: 1.5px;
+	font-weight: 400;
+	margin-top: 10px;
+}
+
+#link{
+	display: flex;
+    justify-content: center;
+  	align-items: center;
+  	flex-direction: row;
+  	margin: 12vh 0 0 0;
+}
+
+.link-button{
+	/*height: 30px;*/
+	height: 3vw;
+	margin: 0 15px;
+}
+
+#gitlab{
+	/*height: 50px;*/
+	height: 4vw;
+	margin: 0 5px;
+}
+
+#email{
+	/*font-size: 13px;*/
+	font-size: 1vw;
+	text-align: center;
+	letter-spacing: 1.5px;
+	font-weight: 400;
+	margin-top: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	#empty{
+		height: 20vh;
+	}
+
+  	#logo{
+		max-width: 60vw;
+	}
+
+	#explain{
+		font-size: 30px;
+	}
+
+	#location{
+		font-size: 20px;
+	}
+
+	#link{
+	  	margin: 13vh 0 0 0;
+	}
+
+	.link-button{
+		height: 40px;
+		margin: 0 10px;
+	}
+
+	#gitlab{
+		height: 60px;
+		margin: 0 5px;
+	}
+
+	#email{
+		font-size: 20px;
+	}
+  
+}
+
+@media screen and (max-width: 767px) {
+	.mobile-only{
+		display: block;
+	}
+
+	.desktop-only{
+		display: none;
+	}
+
+	#empty{
+		height: 20vh;
+	}
+
+	#border-in{
+	}
+
+	#logo{
+		max-width: 75vw;
+	}
+
+	#explain{
+		font-size: 20px;
+	}
+
+	#location{
+		font-size: 13px;
+	}
+
+	#link{
+	  	margin: 13vh 0 0 0;
+	}
+
+	.link-button{
+		height: 30px;
+		margin: 0 10px;
+	}
+
+	#gitlab{
+		height: 50px;
+		margin: 0 5px;
+	}
+
+	#email{
+		font-size: 13px;
+	}
+
+}
