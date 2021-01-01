@@ -18,7 +18,11 @@
 }
 
 a{
-	text-decoration: none;
+	text-decoration: underline;
+}
+
+a:hover{
+	color: #3F8BFC;
 }
 
 #jumbotron{
