@@ -61,7 +61,7 @@ a:hover{
 	text-align: center;
 	letter-spacing: 1px;
 	font-weight: 300;
-	margin-top:0px;
+	margin-top:2vh;
 }
 
 .bold{
@@ -153,7 +153,8 @@ a:hover{
 	}
 
 	#empty{
-		height: 20vh;
+		/*height: 20vh;*/
+		height: 10vh;
 	}
 
 	#border-in{
